@@ -5,17 +5,185 @@
   font-family: "Roboto";
 }
 
-body {
-  margin: 0;
-}
-
 .login-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   height: 100vh;
   background-color: #052E53;
+  padding: 1.5rem;
 }
+
+.header-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px; /*no se como se haria en porcentajes xd*/
+  height: 48px; /*same que arriba*/
+  background: white;
+  border-radius: 12px;
+}
+
+.header-icon svg {
+  width: 24px;
+  height: 24px;
+  color:#002E5C;
+}
+
+.header-tittle{
+  color:white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem 1.5rem 2rem;
+  gap: 1.1rem;
+}
+
+.login-form h2 {
+  font-size: 1.15rem;
+  color:#143E67; 
+  font-weight: 600;
+}
+
+#welcome-message {
+  font-size: 0.85rem;
+  color: rgb(99, 99, 99);
+}
+
+.User, .Password{
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.User label, .Password label{
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #363A3A;
+}
+
+.user-wrapper, .password-wrapper{
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 100%;
+}
+
+.user-wrapper input, .password-wrapper input{
+  width: 100%;
+  height: 42px;
+  padding-left: 38px;
+  padding-right: 40px;
+  border: 1px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  background-color: #f8fafc;
+  outline: none;
+}
+
+.user-wrapper input:focus, .password-wrapper input:focus{
+  border-color: #002e5c;
+  background-color: white;
+}
+
+.user-icon, .password-icon{
+  display: flex;
+  position: absolute;
+  left: 10px;
+  align-items: center;
+  color: #94a3b8
+}
+
+.user-icon svg, .password-icon svg{
+  width:18px;
+  height: 18px;
+}
+
+.eye-btn{
+  display: flex;
+  align-items: center;
+  position:absolute;
+  right: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color:#94a3b8
+}
+
+.hidden {
+  display:none;
+}
+
+/* ↓ capaz innecesario por ahora pero por si las dudas
+.eye-btn:hover{
+  color: #334155;
+}
+*/
+
+.btn-submit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  height: 44px;
+  background-color: #002E5C;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 0.3rem;
+}
+
+/* ↓ capaz innecesario por ahora pero por si las dudas
+.btn-submit:hover{
+  background-color: #001f3f;
+}
+*/
+
+.btn-submit svg{
+  width: 18px;
+  height: 18px;
+}
+
+#below-message{
+  background-color: #E6F5FF;
+  border-top: 1px;
+  padding: 1.2rem 2rem;
+  font-size: 0.8rem;
+  color: #475569;
+  line-height: 1.4;
+}
+
+#below-message strong {
+  color: #1e293b;
+}
+
+
+/*
 
 .login-container form {
   display: flex;
