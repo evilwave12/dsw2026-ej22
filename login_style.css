@@ -135,11 +135,11 @@
   display:none;
 }
 
-/* ↓ capaz innecesario por ahora pero por si las dudas
+/* ↓ capaz innecesario por ahora pero por si las dudas*/
 .eye-btn:hover{
   color: #334155;
 }
-*/
+
 
 .btn-submit{
   display: flex;
@@ -180,45 +180,4 @@
 
 #below-message strong {
   color: #1e293b;
-}
-
-
-/*
-
-.login-container form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  background: white;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.header-login {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 1.5rem;
-}
-
-.header-icon {
-  background-color: white;
-  width: 52px;
-  height: 52px;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-
-@media screen and (min-width: 600px) {
-  .login-container {
-    align-items: center;
-  }
-
-  .login-container form {
-    width: 400px;
-  }
 }
