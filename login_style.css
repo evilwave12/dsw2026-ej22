@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto";
+  font-family: "Arial";
 }
 
 .login-container {
@@ -11,8 +11,8 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #052E53;
   padding: 1.5rem;
+  background: radial-gradient(circle at center, #0b4578 0%, #052e53 60%, #02192f 100%);
 }
 
 .header-login {
@@ -42,6 +42,8 @@
   font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: 0.7px;
+  padding-top: 0.8rem;
+  padding-bottom: 1.2rem;
 }
 
 .login-card {
@@ -79,7 +81,7 @@
 .User label, .Password label{
   font-size: 0.85rem;
   font-weight: 500;
-  color: #363A3A;
+  color: #000000;
 }
 
 .user-wrapper, .password-wrapper{
@@ -97,13 +99,13 @@
   border: 1px;
   border-radius: 6px;
   font-size: 0.9rem;
-  background-color: #f8fafc;
+  background-color: #d7eafe;
   outline: none;
 }
 
 .user-wrapper input:focus, .password-wrapper input:focus{
   border-color: #002e5c;
-  background-color: white;
+  background-color: #b9b9b9;
 }
 
 .user-icon, .password-icon{
@@ -141,7 +143,7 @@
 }
 
 
-.btn-submit{
+.btn-submit{ /*iniciar sesion*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,24 +160,31 @@
   margin-top: 0.3rem;
 }
 
-/* ↓ capaz innecesario por ahora pero por si las dudas
+/* ↓ pa q el boton de inicio se oscurezca al pasarle el mouse*/
 .btn-submit:hover{
   background-color: #001f3f;
 }
-*/
+
 
 .btn-submit svg{
   width: 18px;
   height: 18px;
 }
 
+.below-message-icon{
+  display: flex;
+  align-items: start;
+  color: #387dde
+}
+
 #below-message{
   background-color: #E6F5FF;
+  display: flex;
   border-top: 1px;
   padding: 1.2rem 2rem;
   font-size: 0.8rem;
   color: #475569;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 #below-message strong {
