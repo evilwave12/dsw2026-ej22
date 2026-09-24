@@ -7,6 +7,7 @@
     "main"
     "footer";
   height: 100dvh;
+  background-color: #F0FAFF;
 }
 
 .dashboard-container nav {

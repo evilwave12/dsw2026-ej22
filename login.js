@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Aquí puedes agregar la lógica para validar el usuario y la contraseña
         if(username === 'admin' && password === 'password') {
             // Redirigir a la página de productos o dashboard
-            window.location.href = 'dashboard.html';
+            window.location.href = 'dashboard_panel.html';
         } else {
             alert('Usuario o contraseña incorrectos');
         }
