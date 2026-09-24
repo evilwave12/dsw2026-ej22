@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Listado de Productos</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="dashboard_panel_style.css">
   <link rel="stylesheet" href="dashboard_style.css">
   <script src="dashboard.js"></script>
 </head>
@@ -25,7 +26,71 @@
     <main>
       <h1>Vista general de gestión</h1>
         <p id="start-panel-message">Configure el personal médico y las especialidades del departamento</p>
-      
+      <div class="card-container">
+
+        <div class="doctor-card">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="doctor-icon">
+        <path d="M12 11v4"/><path d="M14 13h-4"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M18 6v14"/><path d="M6 6v14"/>
+        <rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+
+        <p>hola soi doctor</p>
+        </div>
+
+        <div class="specialty-card">
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="specialty-icon">
+          <rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/>
+          <rect width="7" height="7" x="3" y="14" rx="1"/></svg>
+
+          <p>hola soi especialidad</p></div>
+        <div class="appointment-card">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="appointment-icon"><path d="M8 2v3"/>
+          <path d="M16 2v3"/><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="m9 15 2 2 4-4"/></svg>
+
+          <p>hola soi appointment</p></div>
+
+      </div>
+
+      <div class="directorio-panel">
+        <div class="directorio-header">
+        <h2>Directorio de profesionales médicos</h1>
+        <input type="text" placeholder="Buscar por nombre...">
+        </div>
+        <div class="table-wrapper">
+        <table class="doctor-table">
+        <thead>
+          <tr>
+            <th>Nombre del doctor</th>
+            <th>Especialidad</th>
+            <th>Estado de disponibilidad</th>
+            <!--<th>Acciones</th>-->
+          </tr>
+        </thead>
+        <tbody id="product-table-body">
+          <tr>
+            <td>Dr. Jorge Wilson</td>
+            <td>Cardiología</td>
+            <td>Activo</td>
+          </tr>
+          <tr>
+            <td>Dra. Elena Rodríguez</td>
+            <td>Neurología</td>
+            <td>Activo</td>
+          </tr>
+          <tr>
+            <td>Dr. Robertito Chen</td>
+            <td>Pediatría</td>
+            <td>De Licencia</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      </div>
     </main>
     <!-- <footer>Mi Aplicación &copy; 2024</footer> -->
   </div>
