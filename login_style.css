@@ -185,6 +185,7 @@
   font-size: 0.8rem;
   color: #475569;
   line-height: 1.6;
+  border: 0.5px solid #CBD1DA;
 }
 
 #below-message strong {
