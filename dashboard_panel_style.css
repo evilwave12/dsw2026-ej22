@@ -1,3 +1,14 @@
+.nav-panel {
+  background-color: white;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 4px;
+  color: #0C9388;
+  border-left: 4.5px solid #0C9388;
+  border-bottom: 0.1px solid #CBD1DA;
+}
+
 .card-container{
 display: flex;
 gap: 50px;
