@@ -55,6 +55,12 @@
   padding-bottom: 1.5rem;
 }
 
+#sidebar a{
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 #settings {
   margin-top: auto;
 }
