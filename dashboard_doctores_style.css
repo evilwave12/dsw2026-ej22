@@ -1,10 +1,303 @@
+/*typos y chichecitos*/
+* {
+  font: Roboto;
+}
+
+/*NAV activo*/
+
 .nav-doctores {
   background-color: white;
-  height: 50px;
+  color: #0d4b75;
+  font-weight: 600;
+  border-right: 3px solid #0d4b75;
+}
+
+
+
+/*principal osea digamos toda la pagina*/
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 3rem;
+  background-color: #d6eaff; 
+  gap: 1.8rem;
+}
+
+/*He(gede)ader*/
+.directorio-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.titulos-header{
+  display: flex;
+  flex-direction: column;
+}
+
+.titulos-header h1{
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.titulos-header p{
+  font-size: 0.9rem;
+  color: #64748b;
+  margin: 0;
+}
+
+/*acciones tipo los botoncillos de arriba*/
+.acciones-header{
   display: flex;
   align-items: center;
-  padding: 0 4px;
-  color: #0C9388;
-  border-left: 4.5px solid #0C9388;
-  border-bottom: 0.1px solid #CBD1DA;
+  gap: 0.75rem;
 }
+
+/*barra busqueda*/
+.buscar {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.buscar-icon{
+  display: flex;
+  position: absolute;
+  left: 12px;
+  align-items: center;
+}
+
+.buscar-icon svg {
+  width: 17px;
+  height: 17px;
+  stroke: #94a3b8;
+}
+
+.buscar input{
+  width: 16.25rem;
+  height: 2.6rem;
+  padding: 0 0.75rem 0 2rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  background-color: #d7eafe;
+  color: #1e293b;
+  outline: none;
+}
+
+.buscar input:focus {
+  border-color: #002e5c;
+  background-color: #b9b9b9;
+}
+
+/*botones de horario y docts*/
+
+.boton-header{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  height: 2.5rem;
+  padding: 0 1rem;
+  background-color: #084c7c;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.boton-header:hover{
+  background-color: #001f3f;
+}
+
+.boton-header svg{
+  width: 1rem;
+  height: 1rem;
+}
+
+
+/*Tabla*/
+.table-wrapper{
+  background-color: white;
+  border: 1px solid #BFC4CF;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+}
+
+.doctor-table {
+  width: 100%;
+  border-collapse: collapse; /* Une los bordes de las celdas */
+  text-align: left;
+}
+
+.doctor-table th{
+  background-color: #C1D9F3;
+  color: #64748b;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid #BFC4CF;         
+}
+
+.doctor-table td{
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid #BFC4CF;
+  font-size: 0.88rem;
+  color: #334155;
+  vertical-align: middle;      
+}
+
+.doctor-name{
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.doctor-id{
+  font-size: 0.78rem;
+  color: #94a3b8;
+  margin-top: 2px;
+}
+
+.acciones{
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.acciones svg{
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+/*chiches de hovers para las acciones en la tabla*/
+.acciones svg:hover {
+  stroke: #0d4b75;
+}
+
+.acciones svg:last-child {
+  stroke: #ef4444;
+}
+
+.acciones svg:last-child:hover {
+  stroke: #b91c1c;
+}
+/**/
+
+.table-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9rem 1.25rem;
+  font-size: 0.8rem;
+  color: #64748b;
+  border: 1px solid #BFC4CF;
+  background-color: #C1D9F3;
+}
+
+.boton-footer{
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.boton-footer button{
+  min-width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e2e8f0;
+  background-color: white;
+  color: #475569;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.boton-footer button:hover{
+  background-color: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.boton-footer svg{
+  height: 1rem;
+  width: 1rem;
+}
+
+.boton-footer .btn-1{
+  background-color: #084c7c;
+  border-color: #084c7c;
+  color: black;
+}
+
+/*Cards las de abajito*/
+.card-container{
+  display: flex;
+  gap: 1.5rem;
+  width: 100%;
+  margin-top: 2.5rem;
+}
+
+
+/*lo que estan a punto de ver esta geminiado hasta las fuckin tetas :v*/
+/*
+*teoria:
+  flex: [flex-grow] [flex-shrink] [flex-basis]
+flex-grow (primer valor): Cuánto espacio sobrante puede tomar el elemento en relación con sus hermanos. 
+  - Con flex: 2, el elemento reclama el doble de espacio extra que uno con flex: 1.
+
+flex-shrink (segundo valor): Cuánto puede encogerse si el contenedor se queda sin espacio. 
+  - El valor 1 permite que se reduzca proporcionalmente si no entra en pantalla.
+
+flex-basis (tercer valor): El tamaño inicial del elemento antes de repartir el espacio restante.
+  - Si no defines el tercer valor o usas auto (por ejemplo, solo poniendo flex: 1), el navegador toma como 
+    base el tamaño del contenido que haya dentro. Si una tarjeta tiene mucho texto y otra poco, los anchos finales quedan desparejos.
+  - Al poner 0, obligas al navegador a ignorar el contenido interno para calcular el ancho desde cero, 
+    logrando que el ratio 2 a 1 sea matemáticamente exacto.
+*/
+
+.card-consultas,.card-disponibles, .card-emergencias{
+  background-color: #c1d9f3;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #BFC4CF;
+  padding: 2.5rem 1rem;
+  text-align: center;
+}
+
+.card-consultas{
+  flex: 2 1 0;
+  min-width: 0;
+}
+
+.card-disponibles, .card-emergencias{
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+/*idea original*/
+/*
+.card-consultas,.card-disponibles, .card-emergencias{
+  margin-top: 2.5rem;
+  width: 100%;
+  background-color: white;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 2px solid #0a0a0a;
+  padding: 2.5rem 1rem;
+  text-align: center;
+}
+*/
