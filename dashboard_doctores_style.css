@@ -81,10 +81,10 @@
   width: 16.25rem;
   height: 2.6rem;
   padding: 0 0.75rem 0 2rem;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #c7cbd1;
   border-radius: 0.5rem;
   font-size: 0.9rem;
-  background-color: #d7eafe;
+  background-color: #c9d7e6;
   color: #1e293b;
   outline: none;
 }
@@ -168,6 +168,32 @@ table{
   font-size: 0.78rem;
   color: #94a3b8;
   margin-top: 2px;
+}
+
+.especialidad-table, .disponibilidad-table, .disponibilidad-table-inactivo{
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  font-weight: 500;
+  width: fit-content;
+}
+
+.especialidad-table{
+  border:1px solid #bfdbfe;
+  background-color: #dbeafe;
+  color: #1d4ed8;
+}
+
+.disponibilidad-table{
+  background-color: #d1fae5; 
+  color: #065f46;            
+  border: 1px solid #a7f3d0;
+}
+
+.disponibilidad-table-inactivo{
+  background-color: #fee2e2; 
+  color: #991b1b;            
+  border: 1px solid #fecaca;
 }
 
 .acciones{
