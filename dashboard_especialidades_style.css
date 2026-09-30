@@ -8,6 +8,11 @@
   border-left: 4.5px solid #0C9388;
   border-bottom: 0.1px solid #CBD1DA;
 }*/
+
+* {
+  font: Roboto;
+}
+
 .nav-especialidades {
   background-color: white;
   color: #0d4b75;
@@ -128,16 +133,22 @@
   overflow: hidden;
 }
 
-
-.doctor-table {
+/* Regla general para resetear tablas */
+table {
   width: 100%;
   border-collapse: collapse;
-  /* Une los bordes de las celdas */
+  border: none;
+}
+
+/* Clases actualizadas para coincidir con tu HTML */
+.table-especialidades {
+  width: 100%;
+  border-collapse: collapse;
   text-align: left;
 }
 
-.doctor-table th {
-  background-color: #E7EDF2;
+.table-especialidades th {
+  background-color: #C1D9F3;
   color: #64748b;
   font-size: 0.75rem;
   font-weight: 600;
@@ -146,7 +157,7 @@
   border-bottom: 1px solid #BFC4CF;
 }
 
-.doctor-table td {
+.table-especialidades td {
   padding: 1rem 1.25rem;
   border-bottom: 1px solid #BFC4CF;
   font-size: 0.88rem;
@@ -250,6 +261,12 @@
   font-size: 0.8rem;
   font-weight: 500;
   cursor: pointer;
+}
+
+.boton-footer button.activo {
+  background-color: #084c7c;
+  border-color: #084c7c;
+  color: white; 
 }
 
 .boton-footer button:hover {
