@@ -27,16 +27,44 @@
     display: flex;
 }
 
+.esp{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color: #465976;
+}
+
+.flecha, .agr{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color: #8F9EB4;
+}
+
+
 .titulos-header {
     display: flex;
     flex-direction: column;
+    gap: 0.1rem;
+  line-height: 1.2;
+}
+
+.titulos-header h2{
+    font-weight: 600;
+    color: #000041;
+}
+
+.titulos-header p{
+    color: #40464D;
+    margin-top: -17px;
+    margin-bottom: 1rem;
 }
 
 .create-card {
     display: flex;
+    width: 90%;
     flex-direction: column;
     background-color: #FEFEFE;
     padding: 1.5rem 1.5rem;
+    border: 1px solid #C2C8D2;
 }
 
 .name,
@@ -46,6 +74,7 @@
     flex-direction: column;
     position: relative;
     padding: 0.5rem 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .name label,
@@ -58,18 +87,68 @@
 }
 
 .name input {
+    box-sizing: border-box;
     width: 100%;
     height: 2.5rem;
-    border: 1px;
+    border: 1px solid #C2C8D2;
     border-radius: 6px;
     font-size: 0.9rem;
-    background-color: #d7eafe;
+    background-color: #FEFEFE;
     outline: none;
 }
 
+.description input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 10rem;
+    border: 1px solid #C2C8D2;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    background-color: #FEFEFE;
+    outline: none;
+}
+
+.options select {
+    box-sizing: border-box;
+    width: 100%;
+    height: 2.5rem;
+    border: 1px solid #C2C8D2;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    background-color: #FEFEFE;
+    outline: none;
+}
 
 .buttons {
     display: flex;
     align-items: flex-end;
-    padding: 1.5rem 1rem;
+    justify-content: flex-end;
+    padding: 1rem 1rem;
+    border-top: 1px solid #C2C8D2;
+}
+
+.btn-cancel,
+.btn-save {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+    height: 3rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-cancel {
+    border: 2px solid #8FA4BA;
+    background-color: #FEFEFE;
+    color: #336B9B;
+}
+
+.btn-save {
+    border: 2px solid #040352;
+    background-color: #002E5C;
+    color: white;
+    margin-left: 0.5rem;
 }
