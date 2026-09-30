@@ -16,48 +16,45 @@
   color: #0f172a;
 }
 
-.card-container{
-display: flex;
-gap: 50px;
+#main-title{
+  color: #00355F;
 }
 
-.doctor-card{
-  width: 100%;
-  background-color: white;
+#start-panel-message{
+  margin-top: -15px;
+  font-size: 17px;
+}
+
+.card-container{
+ display: flex;
+  gap: 1.5rem;
+  width: 100%; 
+  height: 25%;
+  margin-top: 30px;
+  font-style: bold;
+  font-weight: 500;
+  color: #1D2937;
+}
+
+.doctor-card, .specialty-card, .appointment-card{
+  flex: 1 1 0;
+  min-width: 0;
+  width: auto;
+  height: 100%;
+  background-color: #FFFFFF;
   border-radius: 6px;
   overflow: hidden;
-  border: 1px solid #D0D5DE;
-  margin-left: 25px;
+  border: 1px solid #BFC4CF;
+  padding: 1rem 1rem;
 }
 
 .doctor-icon, .specialty-icon, .appointment-icon{
-    width: 45px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     background-color: #F0F5F5;
-    margin-top: 15px;
-    margin-left:15px;
-}
-
-.doctor-icon svg{
-    color:red;
-}
-
-.specialty-card{
-  width: 100%;
-  background-color: white;
-  border-radius: 6px;
-  overflow: hidden;
-  border: 1px solid #D0D5DE;
-}
-
-.appointment-card{
-  width: 100%;
-  background-color: white;
-  border-radius: 6px;
-  overflow: hidden;
-  border: 1px solid #D0D5DE;
-  margin-right: 25px;
-
+    padding: 10px;
+    color:#001C55;
+    border-radius: 30%;
 }
 
 .directorio-panel{
@@ -69,7 +66,7 @@ gap: 50px;
   border-radius: 6px;
   overflow: hidden;
   border: 1px solid #D0D5DE;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .directorio-header{
