@@ -15,7 +15,7 @@
   top: 0;
   bottom: 0;
   width: 200px;
-  background-color: #F7F9FB;
+  background-color: #DADFE4;
   left: -200px;
   border: 0.5px solid #CBD1DA;
 }
@@ -47,6 +47,43 @@
   justify-content: space-between;
   padding: 0 1rem;
 }
+
+#sidebar{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-bottom: 1.5rem;
+}
+
+#sidebar a{
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+#settings {
+  margin-top: auto;
+}
+
+#settings, #logout{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 0.75rem;
+  background: none;
+  border: none;
+  padding: 0.85rem 1.25rem;
+  font-size: 0.9rem;
+  color: #64748b;
+  cursor: pointer;
+  text-align: left;
+}
+
+#settings:hover, #logout:hover{
+  background-color: #f1f5f9;
+  color: #0f172a;
+}
+
 
 .dashboard-container header div {
   display: flex;
