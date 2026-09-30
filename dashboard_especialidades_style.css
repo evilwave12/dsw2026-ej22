@@ -133,14 +133,12 @@
   overflow: hidden;
 }
 
-/* Regla general para resetear tablas */
 table {
   width: 100%;
   border-collapse: collapse;
   border: none;
 }
 
-/* Clases actualizadas para coincidir con tu HTML */
 .table-especialidades {
   width: 100%;
   border-collapse: collapse;
@@ -217,16 +215,20 @@ table {
 }
 
 /*chiches de hovers para las acciones en la tabla*/
-.acciones svg:hover {
-  stroke: #0d4b75;
+.acciones svg.pencil {
+  stroke: #94a3b8; 
 }
 
-.acciones svg:last-child {
+.acciones svg.pencil:hover {
+  stroke: #475569;
+}
+
+.acciones svg.trash {
   stroke: #ef4444;
 }
 
-.acciones svg:last-child:hover {
-  stroke: #b91c1c;
+.acciones svg.trash:hover {
+  stroke: #991b1b;
 }
 
 /**/
