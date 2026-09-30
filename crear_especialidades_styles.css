@@ -1,0 +1,75 @@
+* {
+    font: Roboto;
+}
+
+.nav-especialidades {
+    background-color: white;
+    color: #0d4b75;
+    height: 3rem;
+    font-weight: 600;
+    border-right: 3px solid #0d4b75;
+    border-bottom: 0.5px inset gray;
+}
+
+.nav-doctores:hover,
+.nav-panel:hover,
+.nav-busqueda:hover {
+    background-color: #f1f5f9;
+    color: #0f172a;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.indicador-pagina {
+    display: flex;
+}
+
+.titulos-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #FEFEFE;
+    padding: 1.5rem 1.5rem;
+}
+
+.name,
+.description,
+.options {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0.5rem 0.5rem;
+}
+
+.name label,
+.description label,
+.options label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #000000;
+    padding-bottom: 0.5rem;
+}
+
+.name input {
+    width: 100%;
+    height: 2.5rem;
+    border: 1px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    background-color: #d7eafe;
+    outline: none;
+}
+
+
+.buttons {
+    display: flex;
+    align-items: flex-end;
+    padding: 1.5rem 1rem;
+}

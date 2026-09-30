@@ -1,3 +1,12 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const crearEspecialidadesBtn = document.getElementById('btn-especialidad');
+
+  crearEspecialidadesBtn.addEventListener('click', () => {
+    window.location.href = 'crear_especialidades.html';
+  });
+});
+
+
 const key = "especialidadesClave";
 const itemsPorPagina = 3;
 let paginaActual = 1;
