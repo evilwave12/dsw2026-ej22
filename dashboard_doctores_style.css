@@ -125,7 +125,7 @@
 .table-wrapper{
   background-color: white;
   border: 1px solid #BFC4CF;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   overflow: hidden;
 }
 

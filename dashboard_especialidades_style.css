@@ -15,3 +15,272 @@
   font-weight: 600;
   border-right: 3px solid #0d4b75;
 }
+
+/*principal osea digamos toda la pagina*/
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 3rem;
+  background-color: #d6eaff;
+  gap: 1.8rem;
+}
+
+/*He(gede)ader*/
+.directorio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.titulos-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.titulos-header h1 {
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.titulos-header p {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin: 0;
+}
+
+/*acciones tipo los botoncillos de arriba*/
+.acciones-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/*barra busqueda*/
+.buscar {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.buscar-icon {
+  display: flex;
+  position: absolute;
+  left: 12px;
+  align-items: center;
+}
+
+.buscar-icon svg {
+  width: 17px;
+  height: 17px;
+  stroke: #94a3b8;
+}
+
+.buscar input {
+  width: 16.25rem;
+  height: 2.6rem;
+  padding: 0 0.75rem 0 2rem;
+  border: 1px solid #c7cbd1;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  background-color: #c9d7e6;
+  color: #1e293b;
+  outline: none;
+}
+
+.buscar input:focus {
+  border-color: #002e5c;
+  background-color: #b9b9b9;
+}
+
+/*botones de horario y docts*/
+
+.boton-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  height: 2.5rem;
+  padding: 0 1rem;
+  background-color: #084c7c;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.boton-header:hover {
+  background-color: #001f3f;
+}
+
+.boton-header svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.table-wrapper {
+  background-color: white;
+  border: 1px solid #BFC4CF;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+
+.doctor-table {
+  width: 100%;
+  border-collapse: collapse;
+  /* Une los bordes de las celdas */
+  text-align: left;
+}
+
+.doctor-table th {
+  background-color: #E7EDF2;
+  color: #64748b;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid #BFC4CF;
+}
+
+.doctor-table td {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid #BFC4CF;
+  font-size: 0.88rem;
+  color: #334155;
+  vertical-align: middle;
+}
+
+.doctor-name {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.doctor-id {
+  font-size: 0.78rem;
+  color: #94a3b8;
+  margin-top: 2px;
+}
+
+.especialidad-table,
+.disponibilidad-table,
+.disponibilidad-table-inactivo {
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  font-weight: 500;
+  width: fit-content;
+}
+
+.especialidad-table {
+  border: 1px solid #bfdbfe;
+  background-color: #dbeafe;
+  color: #1d4ed8;
+}
+
+.disponibilidad-table {
+  background-color: #d1fae5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+}
+
+.disponibilidad-table-inactivo {
+  background-color: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+.acciones {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.acciones svg {
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+/*chiches de hovers para las acciones en la tabla*/
+.acciones svg:hover {
+  stroke: #0d4b75;
+}
+
+.acciones svg:last-child {
+  stroke: #ef4444;
+}
+
+.acciones svg:last-child:hover {
+  stroke: #b91c1c;
+}
+
+/**/
+
+.table-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9rem 1.25rem;
+  font-size: 0.8rem;
+  color: #64748b;
+  border: 1px solid #BFC4CF;
+  background-color: #C1D9F3;
+}
+
+.boton-footer {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.boton-footer button {
+  min-width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e2e8f0;
+  background-color: white;
+  color: #475569;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.boton-footer button:hover {
+  background-color: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.boton-footer svg {
+  height: 1rem;
+  width: 1rem;
+}
+
+
+/*Cards las de abajito*/
+.card-container {
+  display: flex;
+  gap: 1.5rem;
+  width: 100%;
+  margin-top: 2.5rem;
+}
+
+.card-especialidades,
+.card-mas-demanda,
+.card-agregadas {
+  flex: 1 1 0;
+  min-width: 0;
+  width: auto;
+  background-color: #c1d9f3;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #BFC4CF;
+  padding: 2.5rem 1rem;
+  text-align: center;
+}
