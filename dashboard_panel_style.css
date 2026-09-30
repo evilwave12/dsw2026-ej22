@@ -10,10 +10,16 @@
 }*/
 .nav-panel{
   background-color: white;
-  color: #0d4b75;
+  color: #0C9387;
   height: 3rem;
   font-weight: 600;
-  border-left: 3px solid #0d4b75;
+  border-left: 3px solid #0C9387;
+  border-bottom: 0.5px inset gray;
+}
+
+.nav-doctores:hover, .nav-especialidades:hover, .nav-busqueda:hover {
+  background-color: #f1f5f9;
+  color: #0f172a;
 }
 
 .card-container{
