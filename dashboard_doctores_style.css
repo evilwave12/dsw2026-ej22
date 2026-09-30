@@ -87,14 +87,14 @@
   border: 1px solid #c7cbd1;
   border-radius: 0.5rem;
   font-size: 0.9rem;
-  background-color: #c9d7e6;
+  background-color: #FEFEFE;
   color: #1e293b;
   outline: none;
 }
 
 .buscar input:focus {
   border-color: #002e5c;
-  background-color: #b9b9b9;
+  background-color: #dedede;
 }
 
 /*botones de horario y docts*/
@@ -145,7 +145,7 @@ table{
 }
 
 .doctor-table th{
-  background-color: #C1D9F3;
+  background-color: #E5F6FE;
   color: #64748b;
   font-size: 0.75rem;
   font-weight: 600;
@@ -179,6 +179,7 @@ table{
   border-radius: 1rem;
   font-weight: 500;
   width: fit-content;
+  padding: 0.25rem 0.75rem;
 }
 
 .especialidad-table{
@@ -232,8 +233,7 @@ table{
   padding: 0.9rem 1.25rem;
   font-size: 0.8rem;
   color: #64748b;
-  border: 1px solid #BFC4CF;
-  background-color: #C1D9F3;
+  background-color: #E5F6FE;
 }
 
 .boton-footer{
@@ -279,38 +279,50 @@ table{
   gap: 1.5rem;
   width: 100%;
   margin-top: 2.5rem;
+  height: 8rem;
 }
 
-
-/*lo que estan a punto de ver esta geminiado hasta las fuckin tetas :v*/
-/*
-*teoria:
-  flex: [flex-grow] [flex-shrink] [flex-basis]
-flex-grow (primer valor): Cuánto espacio sobrante puede tomar el elemento en relación con sus hermanos. 
-  - Con flex: 2, el elemento reclama el doble de espacio extra que uno con flex: 1.
-
-flex-shrink (segundo valor): Cuánto puede encogerse si el contenedor se queda sin espacio. 
-  - El valor 1 permite que se reduzca proporcionalmente si no entra en pantalla.
-
-flex-basis (tercer valor): El tamaño inicial del elemento antes de repartir el espacio restante.
-  - Si no defines el tercer valor o usas auto (por ejemplo, solo poniendo flex: 1), el navegador toma como 
-    base el tamaño del contenido que haya dentro. Si una tarjeta tiene mucho texto y otra poco, los anchos finales quedan desparejos.
-  - Al poner 0, obligas al navegador a ignorar el contenido interno para calcular el ancho desde cero, 
-    logrando que el ratio 2 a 1 sea matemáticamente exacto.
-*/
-
 .card-consultas,.card-disponibles, .card-emergencias{
-  background-color: #c1d9f3;
+  background-color: #E5F6FE;
   border-radius: 6px;
   overflow: hidden;
   border: 1px solid #BFC4CF;
   padding: 2.5rem 1rem;
-  text-align: center;
 }
 
 .card-consultas{
   flex: 2 1 0;
-  min-width: 0;
+  display: flex;
+  align-items: center; 
+}
+
+.card-consultas svg{
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #0E4B80;
+  padding : 1rem 1rem;
+  border-radius: 10%;
+  background-color: #CFE4F1;
+}
+
+.card-consultas-text{
+  margin-left: 1.1rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  line-height: 1.2;
+}
+
+.card-consultas-text p2{
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000000;
+}
+.card-consultas-text p3{
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+  color: gray;
 }
 
 .card-disponibles, .card-emergencias{
@@ -318,16 +330,44 @@ flex-basis (tercer valor): El tamaño inicial del elemento antes de repartir el 
   min-width: 0;
 }
 
-/*idea original*/
-/*
-.card-consultas,.card-disponibles, .card-emergencias{
-  margin-top: 2.5rem;
-  width: 100%;
-  background-color: white;
-  border-radius: 6px;
-  overflow: hidden;
-  border: 2px solid #0a0a0a;
-  padding: 2.5rem 1rem;
-  text-align: center;
+.card-disponibles{
+  margin-left: 1.5rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.1rem;
+  line-height: 1.2;
 }
-*/
+
+.card-disponibles p2{
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000000;
+}
+.card-disponibles p3{
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+  color: gray;
+}
+
+.card-emergencias{
+  margin-left: 1.5rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.1rem;
+  line-height: 1.2;
+}
+
+.card-emergencias p2{
+  font-size: 2rem;
+  font-weight: 700;
+  color: red;
+}
+.card-emergencias p3{
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+  color: gray;
+}
