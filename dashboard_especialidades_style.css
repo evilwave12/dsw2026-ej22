@@ -185,15 +185,19 @@ table {
 }
 
 .disponibilidad-table {
-  background-color: #d1fae5;
-  color: #065f46;
+  background-color: #d1fae5; 
+  color: #065f46;            
   border: 1px solid #a7f3d0;
+  border-radius: 1rem;
+  padding: 0.25rem 0.75rem;
 }
 
 .disponibilidad-table-inactivo {
-  background-color: #fee2e2;
-  color: #991b1b;
+  background-color: #fee2e2; 
+  color: #991b1b;            
   border: 1px solid #fecaca;
+  border-radius: 1rem;
+  padding: 0.25rem 0.75rem;
 }
 
 .acciones {
