@@ -25,8 +25,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px; /*no se como se haria en porcentajes xd*/
-  height: 48px; /*same que arriba*/
+  width: 48px; 
+  height: 48px; 
   background: white;
   border-radius: 12px;
 }
