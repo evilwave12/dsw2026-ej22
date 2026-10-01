@@ -36,7 +36,8 @@
 .flecha, .agr{
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    color: #8F9EB4;
+    color: #1F5486;
+    font-weight: 600;
 }
 
 
@@ -75,6 +76,7 @@
     position: relative;
     padding: 0.5rem 0.5rem;
     margin-bottom: 0.5rem;
+    
 }
 
 .name label,
@@ -97,6 +99,10 @@
     outline: none;
 }
 
+.name input::placeholder {
+    color: #b2b6ba;
+}
+
 .description input {
     box-sizing: border-box;
     width: 100%;
@@ -106,6 +112,10 @@
     font-size: 0.9rem;
     background-color: #FEFEFE;
     outline: none;
+}
+
+.description input::placeholder {
+    color: #b2b6ba;
 }
 
 .options select {

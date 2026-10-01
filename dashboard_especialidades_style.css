@@ -84,7 +84,7 @@
   border: 1px solid #c7cbd1;
   border-radius: 0.5rem;
   font-size: 0.9rem;
-  background-color: #c9d7e6;
+  background-color: #FEFEFE;
   color: #1e293b;
   outline: none;
 }
@@ -333,6 +333,16 @@ table {
   line-height: 1.2;
 }
 
+.titulo-total-card p1 {
+  white-space: nowrap;
+}
+
+.titulo-total-card p3{
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+  color: gray;
+}
+
 .card-especialidades svg{
   width: 1.5rem;
   height: 2rem;
@@ -340,7 +350,7 @@ table {
   padding : 0.5rem 1rem;
   border-radius: 10%;
   background-color: #E5EFF4;
-  margin-left:7rem;
+  margin-left:5rem;
   margin-top: -3rem;
 }
 
@@ -351,6 +361,12 @@ table {
   flex-direction: column;
   gap: 1rem;
   line-height: 1.2;
+}
+
+.titulo-mas-demanda-card p3{
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+  color: gray;
 }
 
 .card-mas-demanda svg{
@@ -371,6 +387,12 @@ table {
   flex-direction: column;
   gap: 1rem;
   line-height: 1.2;
+}
+
+.titulo-nuevas-mes p3{
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+  color: gray;
 }
 
 .card-agregadas svg{
