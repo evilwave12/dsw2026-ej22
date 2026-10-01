@@ -140,13 +140,14 @@ table {
 }
 
 .table-especialidades th {
-  background-color: #C1D9F3;
-  color: #64748b;
+  background-color: #E5F6FE;
+  color: #09111F;
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.05em;
   padding: 1rem 1.25rem;
   border-bottom: 1px solid #BFC4CF;
+  font-style:bold;
 }
 
 .table-especialidades td {
@@ -239,7 +240,7 @@ table {
   font-size: 0.8rem;
   color: #64748b;
   border: 1px solid #BFC4CF;
-  background-color: #C1D9F3;
+  background-color: #E5F6FE;
 }
 
 .boton-footer {
@@ -289,15 +290,102 @@ table {
 }
 
 .card-especialidades,
-.card-mas-demanda,
-.card-agregadas {
+.card-mas-demanda {
   flex: 1 1 0;
+  display:flex;
   min-width: 0;
-  width: auto;
-  background-color: #c1d9f3;
+  width: 100px;
+  height:50px;
+  background-color: #FFFFFF;
   border-radius: 6px;
   overflow: hidden;
   border: 1px solid #BFC4CF;
   padding: 2.5rem 1rem;
-  text-align: center;
+  align-items: center;
+  margin-top:-2.5rem;
+  border-left: 5px solid #114A80;
+  border-bottom: 0.5px inset gray;
 }
+
+.card-agregadas{
+  flex: 1 1 0;
+  display:flex;
+  min-width: 0;
+  width: 100px;
+  height:50px;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #BFC4CF;
+  padding: 2.5rem 1rem;
+  align-items: center;
+  margin-top:-2.5rem;
+  border-left: 5px solid #3DDDC0;
+  border-bottom: 0.5px inset gray;
+}
+
+.titulo-total-card{
+  margin-left: 1rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  line-height: 1.2;
+}
+
+.card-especialidades svg{
+  width: 1.5rem;
+  height: 2rem;
+  color: #004580;
+  padding : 0.5rem 1rem;
+  border-radius: 10%;
+  background-color: #E5EFF4;
+  margin-left:7rem;
+  margin-top: -3rem;
+}
+
+.titulo-mas-demanda-card{
+  margin-left: 1.1rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  line-height: 1.2;
+}
+
+.card-mas-demanda svg{
+  width: 1.5rem;
+  height: 2rem;
+  color: #004580;
+  padding : 0.5rem 1rem;
+  border-radius: 10%;
+  background-color: #E5EFF4;
+  margin-left:7rem;
+  margin-top: -3rem;
+}
+
+.titulo-nuevas-mes{
+  margin-left: 1.1rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  line-height: 1.2;
+}
+
+.card-agregadas svg{
+  width: 1.5rem;
+  height: 2rem;
+  color: #084A3C;
+  padding : 0.5rem 1rem;
+  border-radius: 10%;
+  background-color: #DAF8F3;
+  margin-left:7rem;
+  margin-top: -3rem;
+}
+
+
+
+
+
+
