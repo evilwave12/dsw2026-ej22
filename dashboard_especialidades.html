@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="dashboard_style.css">
   <link rel="stylesheet" href="dashboard_especialidades_style.css">
   <script src="dashboard.js"></script>
-  <script src = "dashboard_especialidades.js" defer></script>
+  <script src="dashboard_especialidades.js" defer></script>
 </head>
 
 <body>
@@ -119,15 +119,14 @@
           <div class="buscar">
             <span class="buscar-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-user-search preview-icon">
-                <circle cx="10" cy="7" r="4" />
-                <path d="M10.3 15H7a4 4 0 0 0-4 4v2" />
-                <circle cx="17" cy="17" r="3" />
-                <path d="m21 21-1.9-1.9" />
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-search preview-icon">
+                <path d="m21 21-4.34-4.34" />
+                <circle cx="11" cy="11" r="8" />
               </svg>
+
             </span>
-            <input type="text" id="barra-busqueda" placeholder="Buscar por nombre...">
+            <input type="text" id="barra-busqueda" placeholder="Buscar especialidad...">
           </div>
 
           <button class="boton-header" id="btn-especialidad">
@@ -185,45 +184,58 @@
       <div class="card-container">
         <!--primera card-->
         <div class="card-especialidades">
-    
-        <div class="titulo-total-card">
-          <p1>TOTAL ESPECIALIDADES</p1>
-          <p2>24</p2>
-          <p3>+2 este trimestre</p3>
-        </div>
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" 
-        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-list preview-icon"><path d="M3 5h.01"/>
-        <path d="M3 12h.01"/><path d="M3 19h.01"/><path d="M8 5h13"/><path d="M8 12h13"/><path d="M8 19h13"/></svg>
+
+          <div class="titulo-total-card">
+            <p1>TOTAL ESPECIALIDADES</p1>
+            <p2>24</p2>
+            <p3>+2 este trimestre</p3>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-list preview-icon">
+            <path d="M3 5h.01" />
+            <path d="M3 12h.01" />
+            <path d="M3 19h.01" />
+            <path d="M8 5h13" />
+            <path d="M8 12h13" />
+            <path d="M8 19h13" />
+          </svg>
 
         </div>
 
         <!--segunda card-->
         <div class="card-mas-demanda">
-        
-        <div class = "titulo-mas-demanda-card">
-          <p1>MÁS DEMANDADA</p1>
-          <p2>Cardiología</p2>
-          <p3>%15 incremento en citas</p3>
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" 
-        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart preview-icon">
-        <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
+
+          <div class="titulo-mas-demanda-card">
+            <p1>MÁS DEMANDADA</p1>
+            <p2>Cardiología</p2>
+            <p3>%15 incremento en citas</p3>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-heart preview-icon">
+            <path
+              d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+          </svg>
 
         </div>
 
         <!--tercera card-->
         <div class="card-agregadas">
 
-        <div class="titulo-nuevas-mes">
-          <p1>NUEVAS ESTE MES</p1>
-          <p2>03</p2>
-          <p3>Psicología, Nutrición...</p3>
+          <div class="titulo-nuevas-mes">
+            <p1>NUEVAS ESTE MES</p1>
+            <p2>03</p2>
+            <p3>Psicología, Nutrición...</p3>
 
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" 
-        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-badge-check preview-icon">
-        <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/>
-        <path d="m16 9-5.5 5.5L8 12"/></svg>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-badge-check preview-icon">
+            <path
+              d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+            <path d="m16 9-5.5 5.5L8 12" />
+          </svg>
         </div>
       </div>
     </main>
